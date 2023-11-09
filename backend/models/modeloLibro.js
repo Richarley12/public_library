@@ -1,6 +1,8 @@
-import mongoose from "mongoose";
-const Schema= mongoose.Schema; 
-const Libros = new Schema({
+import mongoose from 'mongoose';
+
+const Schema= mongoose.Schema;
+
+const Libro = new Schema({
     nombre:{
         type:String,
         required:true
@@ -25,5 +27,6 @@ const Libros = new Schema({
         type: Boolean,
         default: true
     }
-}
-)
+})
+
+export const modeloLibro = mongoose.model('libros',Libro);
