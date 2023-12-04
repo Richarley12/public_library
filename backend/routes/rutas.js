@@ -6,3 +6,4 @@ const controladorLibros= new ControladorLibros()
 export const rutas= express.Router()
 
 rutas.post('/registrarlibro',controladorLibros.resgitrarLibro)
+rutas.get('/buscarLibros',controladorLibros.buscarLibros)

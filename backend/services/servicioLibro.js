@@ -6,4 +6,11 @@ export class Servicios_Libros{
         let Nuevolibro = new modeloLibro(datosLibro);
         return await Nuevolibro.save() 
     }
+    async buscarTodosLibros(){
+        let todosLibros= await modeloLibro.find()
+        return todosLibros
+    }
+
+
+    
 }

@@ -1,6 +1,7 @@
 import express from 'express';
-import { establecerConexion } from "./database/conexion.js";
-import { rutas } from "./routes/rutas.js";
+import { establecerConexion } from "../backend/database/conexion.js";
+import { rutas } from "../backend/routes/rutas.js";
+import cors from 'cors';
 
 export class API {
     constructor(){
@@ -12,6 +13,7 @@ export class API {
         this.app.listen(process.env.PORT,()=>console.log('encendido en '+process.env.PORT))
     }
     configurarRutas(){
+        this.app.use(cors());
         this.app.use(express.json())
         this.app.use('/',rutas)
     }

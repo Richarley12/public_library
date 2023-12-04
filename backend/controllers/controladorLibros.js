@@ -7,7 +7,7 @@ export class ControladorLibros{
     async resgitrarLibro(peticion,respuesta){
         const objetoServicioLibro= new Servicios_Libros()
         try {
-            const { nombre,autor,genero,subgenero,url}= peticion.body
+            const { nombre,autor,genero,editorial,url}= peticion.body
             if(!nombre || !autor || !genero || !url){ 
                 respuesta.status(400).send("Faltan datos en la petición")
             }else {
@@ -15,7 +15,7 @@ export class ControladorLibros{
                 nombre,
                 autor,
                 genero,
-                subgenero,
+                editorial,
                 url})
                 await objetoServicioLibro.registrarLibros(nuevolibro);
                 respuesta.status(200).json({
@@ -28,4 +28,21 @@ export class ControladorLibros{
         })
     }
     }
+    async buscarLibros(peticion,respuesta){
+        const objetoServicioLibro= new Servicios_Libros()
+        try{
+            respuesta.status(200).json({
+                "mensaje":"Exito buscando los libros",
+                "libros":await objetoServicioLibro.buscarTodosLibros(),
+            })
+        }
+        catch(error){
+            respuesta.status(400).json({
+                "mensaje":"Fallamos en la operacion"+error
+            })
+        }
+    }
+
+
+
 }

@@ -15,7 +15,7 @@ const Libro = new Schema({
         type:String,
         required:true
     },
-    subgenero:{
+    editorial:{
         type:String,
         required:false
     },

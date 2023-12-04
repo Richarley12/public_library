@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <title>Biblioteca pública</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="../frontend/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="module" src="../index.js"></script>
+    <!-- <script src="./inicio.js"></script> -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Biblioteca pública</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div> -->
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"src="./img/anarquismo.jfif"/>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" width="100%" height="100%" src="./img/comunismo.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" width="100%" height="100%" src="./img/liberalismo.jfif" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./img/icono anarquismo.png" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+        <h2>Anarquismo</h2>
+        <p>El anarquismo filosófico es una escuela de pensamiento anarquista, que sostiene que el Estado carece de legitimidad moral, pero no aboga por la revolución para acabar con él. Aunque el anarquismo filosófico no implica necesariamente alguna acción encaminada a la abolición del Estado, los anarquistas filosóficos no creen que tengan la obligación o el deber de obedecer al Estado, o por el contrario, que el Estado tenga el derecho de mando. Sus partidarios piensan que el individuo "se posee a sí mismo", y que debe actuar según su propio juicio y reconoce a todo individuo la misma libertad.</p>
+        <p><a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver libros &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./img/icono comunismo.png" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+        <h2>Comunismo</h2>
+        <p>El comunismo incluye una variedad de escuelas de pensamiento. La visión filosófica de una sociedad comunitaria tiene antecedentes hasta la República de Platón y en los primeros cristianos (comunismo primitivo). El comunismo, como proyecto de socialización de los medios de producción, surgió en el siglo XVI, bajo la forma de diversas teorías económicas basadas en el colectivismo agrario. Las más conocidas fueron la obra Utopía, de Tomás Moro, y la ideología revolucionaria babuvina, que derivó del movimiento jacobino de la Revolución francesa. El ideario comunista se convirtió, a comienzos del siglo XIX, en un complejo proyecto económico, gracias a las diferentes corrientes del llamado socialismo utópico, del anarquismo y de las ramas obreras del socialismo y comunismo cristiano.</p>
+        <p><a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver libros &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./img/icono liberalismo.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+        <h2>Liberalismo</h2>
+        <p>El liberalismo es una filosofía política y jurídica que defiende la libertad individual, la igualdad ante la ley, y una reducción del poder del Estado. Representa una corriente muy heterogénea y hay muchas formas y tipos de liberalismo, pero en general defiende los derechos individuales —como el derecho de propiedad, la libertad de asociación, la libertad de religión o la libertad de expresión—; el libre mercado o capitalismo; la igualdad ante la ley de todo individuo sin distinción de sexo, raza, origen o condición social; y el Estado de derecho o imperio de la ley al que deben someterse los gobernantes.</p>
+        <p><a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver libros &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="Título">Titulo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table id="myTable" class="table table-hover">
+          <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Autor</th>
+                  <th>Opciones</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Row 1 Data 1</td>
+                  <td>Row 1 Data 2</td>
+                  <td>Row 1 Data 3</td>
+              </tr>
+              <tr>
+                  <td>Row 2 Data 1</td>
+                  <td>Row 2 Data 2</td>
+                  <td>Row 2 Data 3</td>
+              </tr>
+          </tbody>
+      </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+    <script src="../frontend/assets/dist/js/bootstrap.bundle.min.js"></script>
+     
+  </body>
+</html>
